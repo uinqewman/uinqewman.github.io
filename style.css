@@ -97,12 +97,4 @@ body{
 }
 .register-link p a:hover{
   text-decoration: underline;
-  @font-face {
-
-  font-family: 'Material Icons';
-
-  src: url('https://unpkg.com/material-design-icons@latest/iconfont/material-icons.woff2') format('woff2');
-
-}
-
 }
