@@ -1,40 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | Kenshin</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-</head>
-<body>
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-  <div class="wrapper">
-    <form action="#" method="POST">
-      <h1>Login</h1>
+/* Centering the login form */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("image.png") no-repeat center/cover;
+}
 
-      <div class="input-box">
-        <input type="text" name="username" placeholder="Username" required>
-        <i class="bx bxs-user"></i>
-      </div>
+/* Wrapper Styles */
+.wrapper {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+}
 
-      <div class="input-box">
-        <input type="password" name="password" placeholder="Password" required>
-        <i class="bx bxs-lock-alt"></i>
-      </div>
+/* Title */
+.wrapper h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 
-      <div class="remember-forget">
-        <label><input type="checkbox" name="remember"> Remember me</label>
-        <a href="javascript:void(0);">Forgot password?</a>
-      </div>
+/* Input Box */
+.input-box {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
 
-      <button type="submit" class="btn">Login</button>
+.input-box input {
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 40px 10px 15px;
+  outline: none;
+}
 
-      <div class="register-link">
-        <p>Don't have an account? <a href="javascript:void(0);">Register</a></p>
-      </div>
-    </form>
-  </div>
+.input-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
 
-</body>
-</html>
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Remember & Forgot */
+.remember-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.remember-forget label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.remember-forget input {
+  accent-color: #fff;
+}
+
+.remember-forget a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
+
+/* Register Link */
+.register-link {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.register-link a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
